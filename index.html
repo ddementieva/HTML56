@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Alecto</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    <link href="favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lato:400,700,100,100italic,300,300italic,400italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script type = "text/javascript">
+          function displayNextImage() {
+              x = (x === images.length - 1) ? 0 : x + 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function displayPreviousImage() {
+              x = (x <= 0) ? images.length - 1 : x - 1;
+              document.getElementById("img").src = images[x];
+          }
+
+          function startTimer() {
+              setInterval(displayNextImage, 3000);
+          }
+
+          var images = [], x = -1;
+          images[0] = "img/bridge.jpg";
+          images[1] = "img/city.jpg";
+          images[2] = "img/girl.jpg";
+    </script>
+</head>
+<body onload = "startTimer()">
+    <img id="img" src="startpicture.jpg"/>
+    <button type="button" onclick="displayPreviousImage()">Previous</button>
+    <button type="button" onclick="displayNextImage()">Next</button>
+
+    <div class="wrapper">
+
+        <!-- header -->
+
+        <header class="h-page">
+            <div class="container">
+                <h1>
+                    <a href="#"><img alt="Alecto." src="img/logo.png" /></a>
+                </h1>
+                <ul class="nav">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Work</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><img src="" alt="Find more" /></li>
+                </ul>
+                <div class="content">
+                    <h2><span>Alecto</span> is a simple PSD Template</h2>
+                    <p>Nam varius accumsan elementum aliquam</p>
+                    <a href="#" class="learn-more">Learn more</a>
+                </div>
+            </div>
+        </header>
+
+        <!-- main -->
+
+        <main class="m-page">
+            <div class="main-page">
+                <div class="container">
+                    <div class="about">
+                        <h2>About Us</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- our-services -->
+
+            <div class="service">
+                <div class="container">
+                    <div class="our-services">
+                        <div class="text">
+                            <h2>Our Services</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                        </div>
+                        <div class="service-icon">
+                            <div>
+                                <img alt="fully editable" src="img/menu-1.png" />
+                                <span>FULLY EDITABLE</span>
+                            </div>
+                            <div>
+                                <img alt="fully editable" src="img/menu-2.png" />
+                                <span>FREE DOWNLOAD</span>
+                            </div>
+                            <div>
+                                <img alt="fully editable" src="img/menu-3.png" />
+                                <span>MODERN DESIGN</span>
+                            </div>
+                            <div>
+                                <img alt="fully editable" src="img/menu-4.png" />
+                                <span>100% RESPONSIVE</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- describe -->
+
+            <div class="describe">
+                <div class="container">
+                    <div class="text-describe">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, std do eiusmod tempor incididunt ut labore tet dolore magna aliqua.  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex.
+                    </div>
+                    <a href="#" class="arr-l"></a>
+                    <a href="#" class="arr-r"></a>
+                </div>
+            </div>
+
+            <!-- prices -->
+
+            <div class="prices">
+                <div class="container">
+                    <div class="text">
+                        <h2>Check Our Prices</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                    <div class="price-list">
+                        <div>
+                            <div class="head">
+                                <div class="number"><span>$</span>19</div>
+                                <div>per month</div>
+                                <div class="type">Standard</div>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>5 Projects</li>
+                                    <li>200 MB Storage</li>
+                                    <li>Notification settings</li>
+                                    <li>Password protection</li>
+                                </ul>
+                                <a href="">Buy Now</a>
+                            </div>
+                        </div>
+                        <div class="business">
+                            <div class="head">
+                                <div class="number"><span>$</span>39</div>
+                                <div>per month</div>
+                                <div class="type">Business</div>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>15 Projects</li>
+                                    <li>1 GB Storage</li>
+                                    <li>Notification settings</li>
+                                    <li>Password protection</li>
+                                </ul>
+                                <a href="">Buy Now</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="head">
+                                <div class="number"><span>$</span>59</div>
+                                <div>per month</div>
+                                <div class="type">Premium</div>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>30 Projects</li>
+                                    <li>2 GB Storage</li>
+                                    <li>Notification settings</li>
+                                    <li>Password protection</li>
+                                </ul>
+                                <a href="">Buy Now</a>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="head">
+                                <div class="number"><span>$</span>99</div>
+                                <div>per month</div>
+                                <div class="type">Unlimited</div>
+                            </div>
+                            <div class="list">
+                                <ul>
+                                    <li>Unlimited Projects</li>
+                                    <li>Unlimited Storage</li>
+                                    <li>Notification settings</li>
+                                    <li>Password protection</li>
+                                </ul>
+                                <a href="">Buy Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <!-- special -->
+
+            <div class="special">
+                <div class="container">
+                    <div class="feature">
+                        <img alt="high resolution" src="img/high-resolution.png" />
+                        <h3>HIGH RESOLUTION</h3>
+                        <p>Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                    </div>
+                    <div class="feature">
+                        <img alt="high resolution" src="img/photography.png" />
+                        <h3>PHOTOGRAPHY</h3>
+                        <p>Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                    </div>
+                    <div class="feature">
+                        <img alt="high resolution" src="img/customize.png" />
+                        <h3>EASY TO CUSTOMIZE</h3>
+                        <p>Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                    </div>
+                    <div class="feature">
+                        <img alt="high resolution" src="img/support.png" />
+                        <h3>24/7 SUPPORT</h3>
+                        <p>Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                    </div>
+                    <div class="feature">
+                        <img alt="high resolution" src="img/theme.png" />
+                        <h3>POWERFULL THEME</h3>
+                        <p>Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                    </div>
+                    <div class="feature">
+                        <img alt="high resolution" src="img/optimization.png" />
+                        <h3>SEO OPTIMIZATION</h3>
+                        <p>Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>
+                    </div>
+                </div>
+            </div>
+
+        <!-- join -->
+
+            <div class="join">
+                <div class="container">
+                    <p>Became A Part Of <span>Mache</span> Community Today</p>
+                    <a href="#">Join Us</a>
+                </div>
+            </div>
+
+        <!-- updates -->
+
+            <div class="updates">
+                <div class="container">
+                    <div class="text">
+                        <h2>Our Latest Updates</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation</p>
+                    </div>
+                    <div class="item">
+                        <div class="picture">
+                            <a href="#"><img alt="picture" src="img/police.jpg" /></a>
+                        </div>
+                        <div class="info">
+                            <h3>LOREM IPSUMA DOLOR SIT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="picture">
+                            <a href="#"><img alt="picture" src="img/spiral.jpg" /></a>
+                        </div>
+                        <div class="info">
+                            <h3>LOREM IPSUMA DOLOR SIT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="picture">
+                            <a href="#"><img alt="picture" src="img/city.jpg" /></a>
+                        </div>
+                        <div class="info">
+                            <h3>LOREM IPSUMA DOLOR SIT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="picture">
+                            <a href="#"><img alt="picture" src="img/girl.jpg" /></a>
+                        </div>
+                        <div class="info">
+                            <h3>LOREM IPSUMA DOLOR SIT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="picture">
+                            <a href="#"><img alt="picture" src="img/bridge.jpg" /></a>
+                        </div>
+                        <div class="info">
+                            <h3>LOREM IPSUMA DOLOR SIT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="picture">
+                            <a href="#"><img alt="picture" src="img/station.jpg" /></a>
+                        </div>
+                        <div class="info">
+                            <h3>LOREM IPSUMA DOLOR SIT</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur elit, sed do eiusmod tempor incididunt ut labore et</p>
+                        </div>
+                    </div>
+                    <div class="show-more">
+                        <a href="#">Show More</a>
+                    </div>
+                </div>
+            </div>
+
+        <!-- template -->
+
+
+            <div class="template">
+                <div class="text">
+                    <h2>Mache Free PSD Template</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                    <p>ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse</p>
+                    <p>cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,</p>
+                    <p>sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                    <a href="#">Show More</a>
+                </div>
+            </div>
+
+        <!-- download -->
+
+            <div class="download">
+                <div class="container">
+                    <div class="col">
+                        <h2>Please share some love by appreciate it and download!</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa </p>
+                        <a href="#">Download Now</a>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <!-- footer -->
+
+        <footer class="f-page">
+            <div class="container">
+                <p>© 2015 COPYRIGHT MACHE TEMPLATE</p>
+                <div class="author">
+                    <p>DESIGNED BY</p>
+                    <a href="#">
+                        <img alt="symu.co" src="img/symu.png" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
